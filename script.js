@@ -134,11 +134,39 @@ function displayEducation() {
     });
   }
   
-  
+// Sample certifications data (replace this with your actual certifications)
+const certifications = [
+  'AWS Certified Machine Learning - Specialty',
+  'Google Cloud Professional Machine Learning Engineer',
+  'AWS Certified Solutions Architect - Associate',
+  'Microsoft Certified: Azure Administrator Associate',
+  'AWS Certified DevOps Engineer - Professional',
+  'Microsoft Certified: Azure DevOps Engineer Expert',
+  'Certified Information Systems Security Professional (CISSP)',
+  'Certified Cloud Security Professional (CCSP)',
+  // Add more certification details
+];
+
+// Function to display certifications as tiles
+function displayCertifications() {
+  const certificationContainer = document.getElementById('certificationContainer');
+  certificationContainer.innerHTML = '';
+
+  certifications.forEach(certification => {
+    const certificationTile = document.createElement('div');
+    certificationTile.classList.add('certification-tile');
+
+    const certElement = document.createElement('p');
+    certElement.textContent = certification;
+
+    certificationTile.appendChild(certElement);
+    certificationContainer.appendChild(certificationTile);
+  });
+}
   // Event listener for filtering projects
   document.getElementById('filterInput').addEventListener('input', displayProjects);
   
   // Initial display of projects and education
   displayProjects();
   displayEducation();
-  
+  displayCertifications(); 
