@@ -1,0 +1,197 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+/* Header styles */
+.site-header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-tile {
+  flex: 0 0 calc(33.33% - 10px); /* Three tiles in a row */
+  margin: 5px; /* Adjust as needed for spacing */
+  text-align: center;
+}
+
+.image-tile img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional: Rounded corners */
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-tile img:hover {
+  transform: scale(1.1);
+}
+
+
+.site-title {
+  margin: 0;
+  font-size: 32px;
+}
+
+.site-nav .nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-nav .nav-list li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.site-nav .nav-list li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.site-nav .nav-list li a:hover {
+  color: #ffd700; /* Change to desired hover color */
+}
+
+
+  /* header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  } */
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  input[type="text"] {
+    padding: 8px;
+    width: 200px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  /* New styles for project cards */
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .project-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    max-width: calc(100% - 40px);
+    /* transition: transform 0.3s ease-out; */
+    transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
+  }
+  
+  .project-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+  }
+  
+  .project-card h3 {
+    margin-top: 0;
+    font-size: 20px;
+  }
+  
+  .project-card p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:  #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  
+  .grade-box {
+    background-color: #ffffff; /* Use white background */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 0 300px; /* Adjust width as needed */
+    margin: 10px;
+  }
+  
+  .grade-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer styles */
+.site-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.site-footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.site-footer a:hover {
+  color: #ffd700; /* Change to desired hover color */
+}
+
+/* Rest of your existing CSS styles */
+/* ... */
